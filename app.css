@@ -1,85 +1,83 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 .brand-header {
-    width: 100%;
-    background-color: #151515;
-    color: #fff;
-    border-radius: 1px;
+  width: 100%;
+  background-color: #151515;
+  color: #fff;
+  border-radius: 1px;
 }
 
 .brand-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 14px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 14px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 14px;
 }
 
 .brand-header nav .search-container {
-    width: 40%;
+  width: 40%;
 }
 
 .brand-header nav .search__input {
-    width: 100%;
-    padding: 8px 24px;
-    background-color: transparent;
-    transition: transform 250ms ease-in-out;
-    font-size: 12px;
-    line-height: 15px;
-    color: #575756;
-    background-color: #3F3E3E;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-size: 18px 18px;
-    background-position: 5% center;
-    border-radius: 7px;
-    border: 2px solid #575756;
-    transition: all 250ms ease-in-out;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
+  width: 100%;
+  padding: 8px 24px;
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+  font-size: 12px;
+  line-height: 15px;
+  color: #575756;
+  background-color: #3f3e3e;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 5% center;
+  border-radius: 7px;
+  border: 2px solid #575756;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 .brand-header nav .search__input::placeholder {
-    padding-left: 30px;
-
+  padding-left: 30px;
 }
 
 .brand-header nav .brand-button-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .brand-header nav .brand-button-container .btn-alert {
-    margin: 0 8px;
-    border: none;
-    outline: none;
-    height: 35px;
-    width: 45px;
-    border-radius: 6px;
-    background-color: #3F3E3E;
-    color: #f3f3f3;
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+  margin: 0 8px;
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 45px;
+  border-radius: 6px;
+  background-color: #3f3e3e;
+  /* color: #f3f3f3; */
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 
-    /* <!-- HTML !-->
+  /* <!-- HTML !-->
 <button class="button-75" role="button"><span class="text">Button 75</span></button> */
 
-/* CSS */
-/* .button-75 {
+  /* CSS */
+  /* .button-75 {
   align-items: center;
   background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
   border: 0;
@@ -103,7 +101,7 @@ body {
   text-transform: uppercase;
 } */
 
-/* .button-75:active {
+  /* .button-75:active {
   outline: 0;
 }
 
@@ -132,36 +130,183 @@ body {
 } */
 }
 
+.brand-header nav .brand-button-container .btn-alert img {
+  filter: invert(1);
+}
+
 .brand-header nav .brand-button-container .btn-con,
 .brand-header nav .brand-button-container .btn-con span {
-    height: 35px;
-    /* margin: 0 5px; */
-    width: 100%;
-    background-color: #3F3E3E;
-    color: #f3f3f3;
-    padding-left: 1px;
-    display: flex;
-    font-size: .9rem;
-    font-weight: 400;
-    justify-content: space-around;
-    align-items: center;
-    border: none;
-    border-radius: 6px;
-    box-sizing: border-box;
-    outline: 2px solid transparent;
-    text-align: center;
-    text-transform: none;
-    transition: all .1s cubic-bezier(.4, 0, .2, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
+  height: 35px;
+  /* margin: 0 5px; */
+  width: 100%;
+  background-color: #3f3e3e;
+  color: #f3f3f3;
+  padding-left: 1px;
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 400;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  outline: 2px solid transparent;
+  text-align: center;
+  text-transform: none;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1),
+    0px 2px 2px rgba(81, 41, 10, 0.2);
 }
 
 .brand-header nav .brand-button-container .btn-con span {
-    background-color: green;
-    height: 100%;
-    width: 23%;
-    /* border-radius: 6px; */
-    color: #949490;
+  background-color: green;
+  height: 100%;
+  width: 23%;
+  /* border-radius: 6px; */
+  color: #949490;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.container .brand-ads {
+  margin-top: 3.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  height: 4rem;
+  padding: 15px;
+  background: #151515;
+  color: #f3f3f3;
+  border-radius: 10px;
+  font-weight: 500;
+  align-items: center;
+}
+
+.container .brand-ads .brand-ads-action {
+  /* width: 12%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .brand-ads .brand-ads-action button {
+  height: 100%;
+  width: max-content;
+  padding: 6px;
+  border-radius: 7px;
+  outline: none;
+  background: #f3f3f3;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  margin-right: 10px;
+}
+
+.container .brand-ads .brand-ads-action .brand-ads-close {
+  /* background-image: url('https://crushingit.tech/hackathon-assets/icon-cross.svg'); */
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  filter: invert(1);
+}
+
+.container .accordation-container {
+  /* height: 100vh; */
+  margin-top: 3rem;
+  display: flex;
+  /* max-height: 100vh; */
+  align-items: center;
+  justify-content: center;
+  /* background-color: #00c785; */
+}
+
+.container .accordation-container .accordionBox {
+  width: 100%;
+  /* margin: 1.8rem; */
+  max-width: 100%;
+  padding: 10px 10px;
+  border-radius: 9px;
+  background-color: #fff;
+}
+
+.container .accordation-container .accordionBox .accordionItem {
+  transition: all 0.4s;
+  border-radius: 0.4rem;
+}
+
+.container .accordation-container .accordionBox .accordionItem:first-child {
+    /* margin-top: 20px !important; */
+    overflow: visible !important;
+    margin-bottom: 50px !important;
+}
+
+.container .accordation-container .accordionBox .accordionItem:last-child {
+  margin-bottom: 0 !important;
+}
+
+.container .accordation-container .accordionBox .accordionItem .header {
+  display: flex;
+  cursor: pointer;
+  padding: 10px 10px;
+  align-items: center;
+  border-radius: 0.4rem;
+  justify-content: space-between;
+}
+
+.container .accordation-container .accordionBox .accordionItem .header h3,
+.container .accordation-container .accordionBox .accordionItem .header i {
+  pointer-events: none;
+}
+
+.container .accordation-container .accordionBox .accordionItem .header:hover {
+  background-color: rgba(0, 199, 133, 0.21);
+}
+
+.container .accordation-container .accordionBox .accordionItem .header p {
+  margin-top: 12px;
+}
+
+.container .accordation-container .accordionBox .accordionItem .header i {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.container .accordation-container .accordionBox .accordionItem .body {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0.5rem;
+  transition: all 0.4s;
+  margin-left: 1.5rem;
+}
+
+.container .accordation-container .accordionBox .accordionItem.active {
+  margin: 10px 0px;
+  background-color: rgba(0, 199, 133, 0.16);
+}
+
+.container .accordation-container .accordionBox .accordionItem.active .body {
+  margin-top: 10px;
+  max-height: 20rem;
+  padding-bottom: 0.5rem;
+}
+
+.container .accordation-container .accordionBox .accordionItem.active .header {
+  background-color: rgba(0, 199, 133, 0.21);
+}
+
+.container
+  .accordation-container
+  .accordionBox
+  .accordionItem.active
+  .header
+  i {
+  transition: all 0.3s;
+  transform: rotate(90deg);
 }
