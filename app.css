@@ -244,7 +244,7 @@ body {
 .container .accordation-container .accordionBox .accordionItem:first-child {
     /* margin-top: 20px !important; */
     overflow: visible !important;
-    margin-bottom: 50px !important;
+    /* margin-bottom: 50px !important; */
 }
 
 .container .accordation-container .accordionBox .accordionItem:last-child {
@@ -265,9 +265,9 @@ body {
   pointer-events: none;
 }
 
-.container .accordation-container .accordionBox .accordionItem .header:hover {
+/* .container .accordation-container .accordionBox .accordionItem .header:hover {
   background-color: rgba(0, 199, 133, 0.21);
-}
+} */
 
 .container .accordation-container .accordionBox .accordionItem .header p {
   margin-top: 12px;
@@ -283,12 +283,50 @@ body {
   overflow: hidden;
   margin-top: 0.5rem;
   transition: all 0.4s;
-  margin-left: 1.5rem;
+  background: #f3f3f3;
+  border-radius: 10px;
+  padding: 9px;
+}
+
+.container .accordation-container .accordionBox .accordionItem .body .body-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container .accordation-container .accordionBox .accordionItem .body .body-header img {
+  filter: brightness(0.5);
+  width: 25px;
+  height: 25px;
+}
+
+.container .accordation-container .accordionBox .accordionItem .body .body-header p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.container .accordation-container .accordionBox .accordionItem .body .body-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.container .accordation-container .accordionBox .accordionItem .body .body-desc .body-decs-text p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.container .accordation-container .accordionBox .accordionItem .body .body-desc .body-decs-text a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .container .accordation-container .accordionBox .accordionItem.active {
   margin: 10px 0px;
-  background-color: rgba(0, 199, 133, 0.16);
+  /* background-color: rgba(0, 199, 133, 0.16); */
 }
 
 .container .accordation-container .accordionBox .accordionItem.active .body {
@@ -297,9 +335,9 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.container .accordation-container .accordionBox .accordionItem.active .header {
+/* .container .accordation-container .accordionBox .accordionItem.active .header {
   background-color: rgba(0, 199, 133, 0.21);
-}
+} */
 
 .container
   .accordation-container
